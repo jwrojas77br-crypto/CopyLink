@@ -32,29 +32,61 @@ CopyLink/
 
 ## 🚀 Cómo Usar
 
-### Uso Básico
+### Opción 1: Uso Local
 
-1. Abre el archivo `index.html` en tu navegador
-2. El contenido se copiará automáticamente al portapapeles
-3. Puedes hacer clic en el botón "Copiar" para copiar nuevamente
+1. Clona o descarga el repositorio
+2. Abre el archivo `index.html` en tu navegador
+3. El contenido se copiará automáticamente al portapapeles
+4. Puedes hacer clic en el botón "Copiar" para copiar nuevamente
+
+### Opción 2: Desde GitHub Pages (Recomendado)
+
+Accede directamente a la página publicada:
+
+```
+https://jwrojas77br-crypto.github.io/CopyLink/
+```
 
 ### Uso Avanzado con Parámetros URL
 
 Puedes enviar título y contenido mediante parámetros en la URL:
 
+**Formato:**
 ```
-index.html?title=Tu%20Título&text=Tu%20contenido%20aquí
-```
-
-**Ejemplo con markdown:**
-```
-index.html?title=**Hola%20Mundo**&text=Este%20es%20un%20**texto%20enriquecido**
+https://jwrojas77br-crypto.github.io/CopyLink/?title=TU_TITULO&text=TU_TEXTO
 ```
 
-Los parámetros soportan:
-- Espacios: `%20`
-- Saltos de línea: `%0A`
-- Negritas markdown: `**texto**`
+**Ejemplo 1 - Texto simple:**
+```
+https://jwrojas77br-crypto.github.io/CopyLink/?title=Bienvenida&text=Hola%20desde%20CopyLink
+```
+
+**Ejemplo 2 - Con markdown (negritas):**
+```
+https://jwrojas77br-crypto.github.io/CopyLink/?title=**Importante**&text=Este%20es%20un%20**mensaje%20especial**
+```
+
+**Ejemplo 3 - Con saltos de línea:**
+```
+https://jwrojas77br-crypto.github.io/CopyLink/?title=Instrucciones&text=Paso%201%0APaso%202%0APaso%203
+```
+
+### Caracteres Especiales Soportados
+
+| Carácter | Código URL |
+|----------|-----------|
+| Espacio | `%20` |
+| Salto de línea | `%0A` |
+| `*` (para negritas) | `%2A` |
+| `&` | `%26` |
+| `#` | `%23` |
+| `%` | `%25` |
+
+### 💡 Herramientas Útiles
+
+Para codificar tu texto fácilmente, usa:
+- [URL Encoder Online](https://www.urlencoder.org/)
+- [Motodata URL Encoder](https://motodata.es/herramientas/codificador-url.html)
 
 ## 🔧 Módulos Disponibles
 
