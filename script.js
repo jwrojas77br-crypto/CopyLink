@@ -6,6 +6,7 @@
 // Importar módulos
 import { decodeURLEncodings, processMarkdown, cleanMarkdown } from './modules/textProcessor.js';
 import { copyToClipboard } from './modules/clipboard.js';
+import { startAutoCloseCountdown } from './modules/countdown.js';
 
 // Obtener elementos del DOM
 const copyBtn = document.getElementById('copyBtn');
@@ -67,6 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         handleCopy();
     }, 300);
+    // Iniciar cuenta regresiva para cierre automático
+    startAutoCloseCountdown({ seconds: 10 });
 });
 
 // Event listener para el botón

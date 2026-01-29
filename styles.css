@@ -195,6 +195,13 @@ body::before {
     content: ' ✓';
 }
 
+.countdown {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #666;
+    letter-spacing: 0.3px;
+}
+
 /* Toast notification */
 .toast {
     position: fixed;
